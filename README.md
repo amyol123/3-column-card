@@ -25,8 +25,8 @@ images\desktop-view.png
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/amyol123/3-column-card)
+- Live Site URL: (https://3cc.netlify.app)
 
 ### Built with
 
@@ -46,14 +46,6 @@ flex wrap - This can be used to get mobile version from desktop
   }
 
 ### Continued development
-
-### Useful resources
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 ## Acknowledgments
 
