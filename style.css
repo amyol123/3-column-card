@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --orange-: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --verydark-cyan: hsl(179, 100%, 13%);
+  --transparent-paragraph: hsla(0, 0%, 100%, 0.75);
+  --bg-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body p {
+  color: var(--transparent-paragraph);
+}
+body h2,
+button {
+  color: var(--bg-headings-buttons);
+  font-family: "Big Shoulders Display", cursive;
+}
+body button {
+  padding: 0.7rem 2rem;
+  background-color: var(--bg-headings-buttons);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+body h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+body p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+.firstbox button {
+  color: var(--orange-);
+}
+.firstbox button:hover {
+  background-color: var(--orange-);
+  color: var(--bg-headings-buttons);
+  border: 1px solid var(--bg-headings-buttons);
+}
+.secondbox button {
+  color: var(--cyan);
+}
+.secondbox button:hover {
+  background-color: var(--cyan-);
+  color: var(--bg-headings-buttons);
+  border: 1px solid var(--bg-headings-buttons);
+}
+.lastbox button {
+  color: var(--verydark-cyan-);
+}
+.lastbox button:hover {
+  background-color: var(--verydark-cyan-);
+  color: var(--bg-headings-buttons);
+  border: 1px solid var(--bg-headings-buttons);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .firstbox,
+  .secondbox,
+  .lastbox {
+    width: 20rem;
+    height: 25.5rem;
+    padding: 3rem;
+  }
+  .firstbox {
+    background-color: var(--orange-);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .secondbox {
+    background-color: var(--cyan);
+  }
+  .lastbox {
+    background-color: var(--verydark-cyan);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 97svh;
+  }
+  .firstbox,
+  .secondbox,
+  .lastbox {
+    width: 20rem;
+    height: 29.5rem;
+    padding: 3rem;
+  }
+  .firstbox {
+    background-color: var(--orange-);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .secondbox {
+    background-color: var(--cyan);
+  }
+  .lastbox {
+    background-color: var(--verydark-cyan);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  body button {
+    margin-top: 3rem;
+  }
+}
